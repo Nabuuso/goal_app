@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'goal-app';
-  showAddQuote(Modal){
-    
-  }
 }

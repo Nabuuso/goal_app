@@ -1,25 +1,21 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th><em>Qoute-2:</em><br> A vow is fixed <br>
-                and unalterable determination to do a thing,<br> 
-                when such a determination is related <br>
-                to something noble which can only uplift <br>
-                the man who makes the resolve.
+            <th><em>Qoute-2:</em><br> {{quote.quote}}
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Quote-1</td>
-            <td>0</td>
+            <td>{{quote.votes}}</td>
             <td>
-                <button class="btn">Upvote</button>
+                <button class="btn" (click)="Upvote()">Upvote</button>
             </td>
             <td>
-                <button class="btn">Downvote</button> 
+                <button class="btn"(click)="Downvote()">Downvote</button> 
             </td>
             <td>
-                <button class="btn">Delete</button>
+                <button class="btn" (click)="Remove()">Delete</button>
             </td>
         </tr>
     </tbody>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddQuoteComponent } from './add-quote/add-quote.component';
+import { Quote } from './quote';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { AddQuoteComponent } from './add-quote/add-quote.component';
 })
 export class AppComponent {
   title = 'My Quotes';
-  quotes = [];
+  quotes:Quote[] = [];
 
 
   constructor(private ngModal: NgbModal) {
@@ -20,13 +21,27 @@ export class AppComponent {
   openAddQuote(m: any) {
    this.ngModal.open(m) 
   }
-  addquote(Evt:any){
-    Evt.preventDefault();
-    const form = Evt.target;
-    console.log 
+  addquote(evt:any){
+    evt.preventDefault();
+    const form = evt.target;
+    this.quotes.push
     ({
      quote:form.quote.value,
-     author: form.author.value, 
+     author: form.author.value,
+     votes:0, date:new Date
     })
+  }
+
+  remove(index:number){
+    this.quotes.splice(index,1);
+    console.log (this.quotes)
+  }
+
+  upvote(index:number){
+    this.quotes[index].votes++
+  }
+
+  downvote(index:number){
+    this.quotes[index].votes--
   }
 }

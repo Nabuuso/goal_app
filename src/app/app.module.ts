@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { AddQuoteComponent } from './add-quote/add-quote.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,6 +22,7 @@ import { AddQuoteComponent } from './add-quote/add-quote.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

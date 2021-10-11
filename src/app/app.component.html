@@ -30,7 +30,9 @@
         </table>
     </div>
     <div> -->
-        <app-quote-detail></app-quote-detail>
+        <div *ngFor="let quote of quotes; let i=index">
+        <app-quote-detail [quote] = "quote" (remove)="remove(i)" (upvote)="upvote(i)" (downvote)="downvote(i)"></app-quote-detail>
+        </div>
         <!-- <div>
             <button type="button">Add Quotes</button>
         </div> -->

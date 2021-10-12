@@ -1,7 +1,29 @@
-
+<body class="body">
+<div class="container">
+    <h1 style="padding-top: 30px; text-align: center; color:rgb(81, 138, 116); font-size: 70px;">My Quotes</h1>
+    <p style=" padding-top: 30px; text-align: center; font-size: 20px; font-family: 'Times New Roman', Times, serif; font-style: italic;">
+        African proverbs are thought of much more than artistic sayings. <br>
+        They symbolize real life situations in just a few words <br>
+        that consummate great meaning. 
+        In cultures without literature, proverbs provide <br>
+        an array of values and knowledge. 
+        Proverbs often, also provide entertainment because <br>
+        they may consist of rhyme or clever allusions.
+        African leaders have turned to proverbs for their wisdom, <br>
+        and to acquire support and respect from their people. 
+        Proverbs are unforgettable not only because they abrupt, <br>
+        but because they take a complicated life situation 
+        and sum it up into a <br>few comprehensive words. 
+    </p>
+    <h4 style="padding-bottom: 20px; margin-top: 30px; margin-bottom: 30px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: left; font-size: 18px;">"If one finger tries to pick up something from the ground, it cannot." <br>
+        Ashanti (Ghana) In life we are faced <br>
+        with many disputes and sometimes may need help.<br>
+         As the proverb says you can't pick <br>
+        something up without the help of others. </h4>
+</div>
 <div class="container">
 
-    <div>
+    <div> 
      <!--    <table class="table table-striped">
             <thead>
                 <tr>
@@ -33,11 +55,6 @@
         <div *ngFor="let quote of quotes; let i=index">
         <app-quote-detail [quote] = "quote" (remove)="remove(i)" (upvote)="upvote(i)" (downvote)="downvote(i)"></app-quote-detail>
         </div>
-        <!-- <div>
-            <button type="button">Add Quotes</button>
-        </div> -->
-        <!-- Button trigger modal -->
-
   
   <!-- Modal -->
   <ng-template class="modal fade" #modalform let-modal tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -65,10 +82,10 @@
     </form>
   </ng-template>
   <button type="button" class="btn btn-primary" (click)="openAddQuote(modalform)">
-    Add your quote here
+    ADD QUOTE
   </button>
     </div>
 </div>
-
+</body>
 
 

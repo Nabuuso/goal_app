@@ -37,7 +37,7 @@ cd goal-app
 
 code .
 # Technologies Used 
-# HTML,
+###HTML,
 #CSS
 #Bootstrap
 #Javascript

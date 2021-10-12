@@ -29,24 +29,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # Installation/Setup 
-Open Terminal {Ctrl+Alt+T}
+* Open Terminal {Ctrl+Alt+T}
 
-git clone https://github.com/Nabuuso/goal_app.git
+* git clone https://github.com/Nabuuso/goal_app.git
 
-cd goal-app
+* cd goal-app
 
-code .
+* code .
 # Technologies Used 
 * HTML,
-#CSS
-#Bootstrap
-#Javascript
-#Typescript
+* CSS
+* Bootstrap
+* Javascript
+* Typescript
 # Known Bugs 
 No bugs
 # Contact Information 
 wagabaliz@gmail.com
 # License 
-#MIT
-#Copyright (c) 2021 Sr Betty Nabuuso(fsp)
+* MIT
+* Copyright (c) 2021 Sr Betty Nabuuso(fsp)
 

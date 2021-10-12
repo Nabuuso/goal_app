@@ -37,17 +37,16 @@ cd goal-app
 
 code .
 # Technologies Used 
-HTML
-CSS
-Bootstrap
-Angularcli
-Javascript
-Typescript
+#HTML,
+#CSS
+#Bootstrap
+#Javascript
+#Typescript
 # Known Bugs 
 No bugs
 # Contact Information 
 wagabaliz@gmail.com
 # License 
-*MIT
-*Copyright (c) 2021 Sr Betty Nabuuso(fsp)
+#MIT
+#Copyright (c) 2021 Sr Betty Nabuuso(fsp)
 

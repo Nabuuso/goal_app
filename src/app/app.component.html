@@ -24,26 +24,7 @@
 <div class="container">
 
     <div> 
-     
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Quote-1</td>
-                    <td>0</td>
-                    <td>
-                        <button class="btn">Upvote</button>
-                    </td>
-                    <td>
-                        <button class="btn">Downvote</button> 
-                    </td>
-                    <td>
-                        <button class="btn">Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div> -->
+
         <div *ngFor="let quote of quotes; let i=index">
         <app-quote-detail [quote] = "quote" (remove)="remove(i)" (upvote)="upvote(i)" (downvote)="downvote(i)"></app-quote-detail>
         </div>
